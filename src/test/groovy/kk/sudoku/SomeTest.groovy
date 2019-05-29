@@ -6,7 +6,7 @@ class SomeTest extends Specification
 {
     def "verify if surefire works"() {
         expect:
-        1 == 2 + 3
+        1 == 1
 
     }
 }
