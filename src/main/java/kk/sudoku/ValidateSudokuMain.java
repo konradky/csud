@@ -1,6 +1,7 @@
 package kk.sudoku;
 
 import kk.sudoku.application.OptionsParser;
+import kk.sudoku.application.Result;
 
 public class ValidateSudokuMain {
 
@@ -8,7 +9,7 @@ public class ValidateSudokuMain {
 
         OptionsParser optionsParser = new OptionsParser();
 
-        OptionsParser.Result result = optionsParser.parseArguments(args);
+        Result result = optionsParser.parseArguments(args);
 
         if (result.hasError()) {
             System.err.println("INVALID " + result.getErrorMessage());

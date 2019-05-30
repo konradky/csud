@@ -18,8 +18,8 @@ class OptionsParserTest extends Specification
 
         then:
         result != null
-        result.options != null
-        result.options.inputFile == testFile
+        result.value != null
+        result.value.inputFile == testFile
 
         cleanup:
         testFile.delete()
@@ -40,7 +40,7 @@ class OptionsParserTest extends Specification
 
         then:
         result != null
-        result.options == null
+        result.value == null
         result.error == expectedError
 
         where:
@@ -63,7 +63,7 @@ class OptionsParserTest extends Specification
 
         then:
         result != null
-        result.options == null
+        result.value == null
         result.error == OptionsParser.Error.ARGUMENT_IS_NOT_AN_EXISTING_FILE
 
         cleanup:
