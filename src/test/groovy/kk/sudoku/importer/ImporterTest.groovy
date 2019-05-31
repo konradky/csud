@@ -99,7 +99,7 @@ class ImporterTest extends Specification
     }
 
 
-    def tearDown()
+    def cleanup()
     {
         if (testFile.exists())
         {
