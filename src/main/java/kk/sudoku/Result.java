@@ -1,8 +1,8 @@
-package kk.sudoku.application;
+package kk.sudoku;
 
 public class Result<T, E extends Enum<E>> {
-    T value;
-    E error;
+    private T value;
+    private E error;
 
     private Result() {
     }
@@ -27,6 +27,10 @@ public class Result<T, E extends Enum<E>> {
 
     public boolean hasError() {
         return error != null;
+    }
+
+    public E getError() {
+        return error;
     }
 
     public String getErrorMessage() {

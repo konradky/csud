@@ -1,5 +1,6 @@
 package kk.sudoku.application;
 
+import kk.sudoku.Result;
 import lombok.Value;
 
 import java.io.File;
