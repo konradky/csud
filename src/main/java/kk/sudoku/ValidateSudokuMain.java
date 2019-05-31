@@ -9,7 +9,7 @@ public class ValidateSudokuMain {
 
         OptionsParser optionsParser = new OptionsParser();
 
-        Result result = optionsParser.parseArguments(args);
+        Result<OptionsParser.Options, OptionsParser.Error> result = optionsParser.parseArguments(args);
 
         if (result.hasError()) {
             System.err.println("INVALID " + result.getErrorMessage());
