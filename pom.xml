@@ -10,7 +10,7 @@
 
   <properties>
     <jdk.version>1.8</jdk.version>
-    <groovy-all.version>2.4.12</groovy-all.version>
+    <groovy-all.version>2.4.21</groovy-all.version>
     <lombok.version>1.16.18</lombok.version>
     <gmaven.version>1.5</gmaven.version>
     <guava.version>23.0</guava.version>
